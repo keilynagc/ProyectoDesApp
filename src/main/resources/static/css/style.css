@@ -1,0 +1,243 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: BLACK;
+    color: #1FB3CA;
+    font-family: 'Oxanium', cursive;
+}
+
+.nav-boton{
+    background-color: black;
+    padding: 10px 30px;
+}
+.contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
+} 
+
+ 
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+    background: #fff;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+    background: #030303;
+    padding: 20px;
+    border-radius: 4px;
+    height: 350px;
+
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* SecciÃ³n de cartas*/
+.contenedor .widget-1 {
+    display: flex;
+    min-height: 230px;
+}
+.contenedor .widget-2 {
+    display: flex;
+    min-height: 230px;
+}
+
+.card {
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #030303;
+    box-shadow: 0px 1px 10px rgba(70, 204, 209, 0.208);
+    cursor: default;
+    transition: all 400ms ease;
+}
+.card:hover {
+    box-shadow: 5px 5px 20px rgba(70, 204, 209, 0.408);
+    transform: translateY(-3%);
+}
+.card img {
+    width: 100%;
+    height: 180px;
+
+}
+.card .contenidocard {
+    padding: 15px;
+    text-align: center;
+}
+.card .contenido p {
+    line-height: 1.5;
+    color: #1FB3CA;
+}
+.card .contenidocard h3 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.card .contenidocard a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #1FB3CA;
+    border: 1px solid #1FB3CA;
+    border-radius: 4px;
+    transition: all 400ms ease;
+}
+.card .contenidocard a:hover {
+    background: #1FB3CA;
+    color: #030303;
+}
+
+/* SecciÃ³n de cartas*/
+
+.contenedor .header {
+    background: #030303;
+    color: #1FB3CA;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: center;
+}
+
+.contenedor .Imgw11 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.Imgw11 {
+    height: 350px;
+    width: 100%;
+    background-image: url(img/costa-rica-1280x640.jpg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+}
+
+.contenedor .contenido {
+    grid-column: span 2;
+    background: #030303;
+}
+
+.contenedor .sidebar {
+    background: #030303;
+    grid-column: 3 / 4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-row: span 2;
+    min-height: 150px;
+}
+
+.sidebar .boton {
+    background: #1FB3CA;
+	display: block;
+	width: 100%;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: center;
+	padding: 10px;
+	border: none;
+	border-radius: 100px;
+	font-family: 'Roboto', sans-serif;
+	cursor: pointer;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    text-align: center;
+}
+.sidebar ul li{
+    margin: 8px;
+}
+
+.contenedor .footer {
+    background: #030303;
+    color: #1FB3CA;
+    grid-column: span 3;
+}
+
+/*Footer*/
+
+a {
+    text-decoration: none;
+    color: #1FB3CA;
+}
+nav a{
+    font-weight: 300;
+    padding-right: 10px;
+}
+
+footer{
+    display: flex;
+    min-height: 70px;
+    justify-content: space-between;
+    background-color: #030303;
+    align-items: center;
+    padding: 10px;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+
+
+/*Footer END*/
+
+
+@media screen and (max-width: 768px) {
+    .contenedor .contenido {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .sidebar {
+        grid-column: 1 / -1;
+    }
+
+    .contenedor .widget-1 {
+        grid-column: 1 / -1;
+    }
+    .contenedor .widget-2 {
+        grid-column: 1 / -1;
+    }
+
+    .card {
+        max-width: 230px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    nav {
+        padding: 10px 0px;
+    }
+    
+}
