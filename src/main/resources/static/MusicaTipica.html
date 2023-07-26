@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Musica Tica</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="CSS/Menu.css" rel="stylesheet" type="text/css"/>
+        <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet"/>
+        <link th:href="@{/webjars/font-awesome/css/all.css}" rel="stylesheet"/>
+        <script th:src="@{/webjars/jquery/jquery.min.js}"></script>
+        <script th:src="@{/webjars/popper.js/umd/popper.min.js}"></script>
+        <script th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>  
+    </head>
+    <body>
+         <header class="header">
+            <nav class="nav">
+                <a href="index.html" class="logo nav-link">Costa Rica</a>
+                <ul class="nav-menu">
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="MusicaTipica.html">Musica Tipica</a></li>
+                    <li class="nav-menu-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Conozca Costa Rica</a>
+                        <ul class="dropdown-menu dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="VideoHeredia.html">Heredia</a></li>
+                            <li><a class="dropdown-item" href="SanJose.html">San Jose</a></li>
+                            <li><a class="dropdown-item" href="VideoHeredia.html">Alajuela</a></li>
+                            <li><a class="dropdown-item" href="Cartago.html">Cartago</a></li>
+                            <li><a class="dropdown-item" href="Limon.html">Limon</a></li>
+                            <li><a class="dropdown-item" href="Guanacaste.html">Guanacaste</a></li>
+                        </ul>
+                    </li> 
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Vacacionar.html">Vacacionar</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Soporte.html">Soporte</a></li>
+                    <li class="nav-menu-item"><a class="nav-menu-link nav-link" href="Que_hacer.html">Que hacer</a></li>
+                </ul>
+            </nav>
+        </header>
+       <section >
+           <br>
+           <br>
+           <br>
+           <br>
+           <br>
+            <br><!--  -->
+
+           <h2>Marimba</h2>
+           <img src="Imagenes/descarga.jpeg" alt=""/>
+           <article class="container" >
+               <header><h3>El Torito</h3></header>
+               <figure>
+                   <audio controls>
+                       <source src="Audios/El Torito, Marimba, Ricardo Fonseca (320 kbps).mp3" type="audio/mpeg">
+                       Your browser does not support the <code>audio</code> tag.
+                   </audio>
+                   <figcaption>Ricardo Fonseca</figcaption>
+               </figure>
+           </article>
+           
+           <br>
+           <br>
+           <br>
+            <h2>Guitarra </h2>
+            <img src="Imagenes/guitarra}.jpeg" alt=""/>
+           <article class="container">
+               <header><h3>Caña dulce</h3></header>
+               <figure>
+                   <audio controls>
+                       <source src="Audios/Caña Dulce- Guitarra.mp3" type="audio/mpeg">
+                       Your browser does not support the <code>audio</code> tag.
+                   </audio>
+                   <figcaption>Caña dulce version acustica</figcaption>
+               </figure>
+           </article>
+            
+            
+            
+            
+       </section>
+        <footer class="footer"> Derechos reservados 2023</footer>
+    </body>
+</html>
